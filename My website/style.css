@@ -1,0 +1,159 @@
+* {
+    padding: 0% ;
+    margin: 0% ;
+    box-sizing: border-box ;
+    font-family: 'Flamenco', cursive;
+}
+body {
+    font-size: 20px ;
+    height: 100vh ;
+    overflow: hidden;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) , url("Images/berries-berry-bowl-89778.jpg");
+    background-size: cover ;
+    background-position: center ;
+    background-repeat: no-repeat ;
+}
+.row {
+    max-width: 1080px ;
+    margin: 0 auto ;
+}
+.clearfix:after {
+    content: ".";
+    visibility: hidden ;
+    display: block ;
+    height: 0px ;
+    clear: both ;
+}
+.logo {
+    float: left ;
+    width: 120px ;
+    height: auto ;
+    background-color: transparent;
+    border-radius: 40px ;
+    margin-top: 30px ;
+}
+.nav-ul {
+    float: right ;
+    margin-top: 30px ;
+
+}
+.nav-ul li{
+    display: inline-block ;
+    list-style: none ;
+    margin-left: 40px ;
+    color: white ;
+}
+.nav-ul li a {
+    text-decoration: none ;
+    color: white ;
+    text-transform: uppercase ;
+    font-size: 90% ;
+    padding-bottom: 5px ;
+}
+.nav-ul li a:hover {
+    border-bottom: 3px solid #bf55ec ;
+}
+.row2 {
+    width: 1080px;
+    position: absolute;
+    top: 50% ;
+    left: 50% ;
+    transform: translate(-50%,-50%) ;
+}
+h1 {
+    color:  white ;
+    text-transform: uppercase ;
+    font-size: 200% ;
+    word-spacing: 5px ;
+    letter-spacing: 3px ;
+    margin-bottom: 30px ;
+    font-weight: lighter ;
+
+}
+.btn-white {
+    text-decoration: none ;
+    border: 1px solid #bf55ec ;
+    border-radius: 30px ;
+    color: white ;
+    padding: 10px 20px ;
+    text-transform: uppercase ;
+    font-weight: lighter ;
+}
+.btn-white:hover {
+    background-color: #bf55ec ;
+}
+.btn-blue {
+    text-decoration: none ;
+    border: 1px solid white ;
+    border-radius: 30px ;
+    color: bf55ec ;
+    padding: 10px 20px ;
+    font-weight: lighter ;
+    text-transform: uppercase ;
+}
+.btn-blue:hover {
+    background-color: white ;
+}
+span {
+    animation: mytext 2s infinite ;
+}
+@keyframes mytext{
+    0%{color: tomato}
+    25%{color: yellow}
+    50%{color: sienna}
+    75%{color: peru}
+    100%{color: #bf55ec}
+}
+.toogle {
+    display : none ;
+}
+
+@media only screen and (max-width: 1080px ) {
+    .row2 {
+        width: 100% ;
+        padding-left : 2% ;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    h1{font-size: 180%}
+}
+
+@media only screen and (max-width: 768px) {
+    h1{font-size: 160%}
+    .nav-ul{
+        display: none ;
+    
+    }
+    .toogle{display: block;
+        float: right ;
+        color: white ;
+        margin-top: 20px ;
+        margin-right: 10px ;
+    }
+    .nav-ul {
+        float : left ;
+    }
+    .nav-ul li{
+        display : block ;
+        margin-top: 10px ;
+        margin-bottom: 10px;
+    }
+    
+}
+
+@media only screen and (max-width: 576px) {
+    h1{font-size: 140%}
+}
+
+@media only screen and (max-width: 400px) {
+    .btn {
+        display: block ;
+        margin-bottom: 20px ;
+    }
+}
+
+
+
+
+
